@@ -2,13 +2,13 @@ body {
   font-family: Arial, sans-serif;
   direction: rtl;
   margin: 0;
-  background: #f8f8f8;
+  background: #302f2f;
 }
 
 .intro {
   position: fixed;
   top: 0; right: 0; bottom: 0; left: 0;
-  background: #333;
+  background: #2e2d2d;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,8 +26,8 @@ body {
 }
 
 header {
-  background: #222;
-  color: white;
+  background: #eeeaea;
+  color: rgb(31, 30, 30);
   padding: 10px 20px;
   display: flex;
   align-items: center;
@@ -47,12 +47,12 @@ header {
 }
 
 .product {
-  background: white;
+  background: rgb(241, 237, 237);
   padding: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid #242222c9;
   text-align: center;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgb(90, 196, 86);
 }
 
 .product img {
@@ -71,4 +71,28 @@ header {
   border-radius: 30px;
   text-decoration: none;
   font-weight: bold;
+}
+@media (max-width: 600px) {
+  .products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .product {
+    width: 98%;
+    margin: 10px 0;
+    box-sizing: border-box;
+  }
+  .product img {
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+    display: block;
+    margin: 0 auto 10px auto;
+  }
+  input#searchInput {
+    width: 95% !important;
+    max-width: 100% !important;
+    font-size: 18px;
+  }
 }
